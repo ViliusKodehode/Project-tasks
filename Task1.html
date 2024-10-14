@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task1</title>
+    <link rel="Stylesheet" href="task1.styles.css">
 </head>
 <body>
-    
+<H1>Facts about countries</H1>
+<form id="countries">
+    <select name="countries" id="countries">
+        <option value="Great Britain">Great Britain</option>
+        <option value="Poland">Poland</option>
+        <option value="France">France</option>
+        <option value="Norway">Norway</option>
+        <option value="Germany">Germany</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Finland">Finland</option>
+        <option value="Iceland">Iceland</option>
+        <option value="Italy">Italy</option>
+    </select>
+    <br></br>
+    <button type="button" id="Choosecountry">Choose your country</botton>
+    <div id="displaybox"></div>
+</form>
+<script>
+    document.getElementById("Choosecountry").addEventListener("click", function() {
+        var countries =this.value;
+        var customText = ""
+        var imagePath = "";
+        if (countries === "Great Britain") {
+            customText = `
+              <div id="britaintext">
+                 <span style="color:red;font-size 18px">Capital: London</span>
+                 <br></br>
+              </div>`;
+            imagePath = "C:\Users\viliu\Documents\Prosjekter\Project tasks\Project-tasks\Flags for task 1\Britain.png";
+
+        }
+        document.getElementById("countries").innerHTML =customText + `<img src="${imagePath}" alt="Country flag">`;
+    });
+</script>
 </body>
 </html>

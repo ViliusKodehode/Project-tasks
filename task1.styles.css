@@ -1,0 +1,25 @@
+body {
+    background-color: brown;
+}
+h1 {
+    text-align: center;
+    font-size: 140px;
+    color: rgb(188, 126, 46);
+    margin-top: 0%;
+    text-shadow: 2px 2px rgb(211, 220, 211);
+   }
+form {
+    margin-left: 30%;
+    margin-top: 20%;
+    display: block;
+    color: rgb(60, 52, 168);
+    font-size: 40px;
+    background-color: antiquewhite;
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    font-family: fantasy;
+    width: 600px;
+    height: 200px;
+}
