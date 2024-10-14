@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt nettside</title>
+<h1 style="color:rgba(149, 125, 84, 0.064);font-size: 110px;text-align: center;font-family: fantasy;"class="center">Contact us</h1>
+<style>
+    body{
+        background-color: rgb(232, 170, 89);
+    }
+    h1{
+        text-shadow: 1px 5px rgb(220, 89, 53);  
+    }
+    .center {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    input{
+        width: 150px;
+        font-size: small;
+        font-family: arial;
+        background-color: rgb(143, 123, 96); 
+    }
+    form {
+        text-align: center;
+    }
+    #message {
+        vertical-align: top;
+    }
+</style>
+</head>
+<body>
+<form>
+    <label for="fname"style="font-family: fantasy; color: aliceblue;">First name:</label><br>
+    <Input type= "text" id="fname" name="Fname":><br>
+    <br>
+    <label for="lname"style="font-family: fantasy; color: aliceblue;">Last name:</label><br>
+    <input type="text" id="lname" name="Lname"><br>
+    <br>
+    <label for="email" style="font-family: fantasy; color: aliceblue;">Your email:</label><br>
+    <input type="text" id="email" name="Email"><br>
+    <br>
+    <label for="message" style="font-family: fantasy; color: aliceblue;font-size: 20px;">Your message:</label><br>
+    <textarea id="message" name="Message" style="background-color:rgb(143, 123, 96);width: 600px; height: 250px;"></textarea>></textarea><br>
+    <br>
+    <button type="button" onclick="alert('Thank you for your message, we get in touch soon as possible')" style="background-color: antiquewhite; font-family: fantasy;width: 150px;">Send message</button>
+</form>    
+</body>
+</html>
