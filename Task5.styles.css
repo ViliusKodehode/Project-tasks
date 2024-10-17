@@ -15,10 +15,13 @@ body{
 }
 .Logo-grid {
     grid-area: Logo-grid;
-    background-color: #17a0f569;
+    background-color: rgb(152, 152, 254);
     height: 70px;
     text-align: center;
     margin-top: 5%;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: aliceblue;
 }
 
 .Icontext-grid {
@@ -32,16 +35,23 @@ body{
 }
 
 .Icontext-grid .topicon {
-    background-color: #82ed50;
+    background-color: rgb(152, 152, 254);
     height: 50px;
     justify-content: center;
-    align-items: center 
+    align-items: center;
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue;
+
 }
 
 .Line-grid {
     grid-area: Line-grid;
-    background-color: #e80606;
+    background-color: rgb(152, 152, 254);
     height: 5px; 
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue;
 }
 
 .Search-grid {
@@ -54,36 +64,48 @@ body{
 }
 
 .Searchtab-grid {
-    background-color: #e3d237;
+    background-color: rgb(152, 152, 254);
     height: 50px;
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue; 
 }
 
 .Map-grid {
-    background-color: #91eaa0;
+    background-color: rgb(152, 152, 254);
     height: 50px;
-    grid-column: 3 / 4; 
+    grid-column: 3 / 4;
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue; 
 }
 
 .Reklame-grid {
-    background-color: #6f0f0f;
+    background-color:rgb(152, 152, 254);
     height: 300px;
     grid-column: 5 / 6;
     margin-bottom: 20px;
+    border-style: double;
+    border-color: aliceblue;
 }
 
 .Icon-grid {
     grid-area: Icon-grid;
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(6, 150px); 
     grid-gap: 10px;
+    justify-items: center;
+    margin-top: -15%;
 }
 
 .icon {
-    background-color: #b2e31f;
-    height: 50px;
+    background-color: rgb(152, 152, 254);
+    height: 60px;
     text-align: center;
-    image-rendering: optimizeSpeed;
+    border-radius: 20px; 
+    border-style: double;
+    border-color: aliceblue;
 }
 
 .line2-grid {
@@ -92,12 +114,16 @@ body{
     justify-content: space-between;
     padding: 10px;
     text-align: center;
+    margin-top: 150px;
 }
 
 .linetext-grid {
-    background-color: #320606;
+    background-color: rgb(152, 152, 254);
     padding: 10px;
-    width: 48%; 
+    width: 48%;
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue; 
 }
 
 .Anbefalinger {
@@ -109,23 +135,26 @@ body{
 }
 
 .anbefalinger-grid {
-    background-color: #f4e21f;
-    height: 200px; 
+    background-color: rgb(152, 152, 254);
+    height: 200px;
+    border-radius: 30px; 
+    border-style: double;
+    border-color: aliceblue; 
 }
 #diablo {
     font-size: 40px;
     font-family: fantasy;
     text-align: center;
-    color: rgb(50, 24, 24);
+    color: rgb(255, 255, 255);
 }
 span{
-    font-size: 20px;
+    font-size: 22px;
     font-family: fantasy;
     text-align: center;
-    color: red;
+    color: rgb(255, 255, 255);
 }
 #searchbar{
     font-size: 22px;
-    color: #3622cf;
+    color: #ffffff;
     font-family: fantasy;
 }
