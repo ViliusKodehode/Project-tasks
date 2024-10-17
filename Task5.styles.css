@@ -1,0 +1,100 @@
+.main-grid {
+    display: grid;
+    grid-template-areas: 
+        "Logo-grid Icontext-grid Icontext-grid"
+        "Line-grid Line-grid Line-grid"
+        "Search-grid Search-grid Search-grid"
+        "Reklame-grid Reklame-grid Reklame-grid"
+        "Icon-grid Icon-grid Icon-grid"
+        "line2-grid line2-grid line2-grid"
+        "Anbefalinger Anbefalinger Anbefalinger";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
+.Logo-grid {
+    grid-area: Logo-grid;
+    background-color: #f1f1f1;
+    height: 100px;
+}
+
+.Icontext-grid {
+    grid-area: Icontext-grid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.Icontext-grid .topicon {
+    background-color: #ccc;
+    height: 50px; 
+}
+
+.Line-grid {
+    grid-area: Line-grid;
+    background-color: #e5e5e5;
+    height: 5px; 
+}
+
+.Search-grid {
+    grid-area: Search-grid;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-gap: 10px;
+}
+
+.Searchtab-grid {
+    background-color: #fff;
+    height: 50px; 
+}
+
+.Map-grid {
+    background-color: #ddd;
+    height: 300px; 
+}
+
+.Reklame-grid {
+    grid-area: Reklame-grid;
+    background-color: #f1f1f1;
+    height: 150px;
+}
+
+.Icon-grid {
+    grid-area: Icon-grid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-gap: 10px;
+}
+
+.icon {
+    background-color: #ccc;
+    height: 50px;
+}
+
+.line2-grid {
+    grid-area: line2-grid;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.linetext-grid {
+    background-color: #f9f9f9;
+    padding: 10px;
+    width: 48%; 
+}
+
+.Anbefalinger {
+    grid-area: Anbefalinger;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+}
+
+.anbefalinger-grid {
+    background-color: #eee;
+    height: 200px; 
+}
+span {
+    font-size: 18px;
+    left: 10%;
+}
