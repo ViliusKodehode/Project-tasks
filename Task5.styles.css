@@ -1,10 +1,12 @@
+body{
+    background-image: linear-gradient(to right,rgb(171, 171, 244) 40%,rgb(100, 100, 235) 100%);
+}
 .main-grid {
     display: grid;
     grid-template-areas: 
         "Logo-grid Icontext-grid Icontext-grid"
         "Line-grid Line-grid Line-grid"
         "Search-grid Search-grid Search-grid"
-        "Reklame-grid Reklame-grid Reklame-grid"
         "Icon-grid Icon-grid Icon-grid"
         "line2-grid line2-grid line2-grid"
         "Anbefalinger Anbefalinger Anbefalinger";
@@ -13,49 +15,61 @@
 }
 .Logo-grid {
     grid-area: Logo-grid;
-    background-color: #f1f1f1;
-    height: 100px;
+    background-color: #17a0f569;
+    height: 70px;
+    text-align: center;
+    margin-top: 5%;
 }
 
 .Icontext-grid {
     grid-area: Icontext-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 150px);
     grid-gap: 10px;
+    margin-top: 2.5%;
+    text-align: center;
+    justify-content: center;
 }
 
 .Icontext-grid .topicon {
-    background-color: #ccc;
-    height: 50px; 
+    background-color: #82ed50;
+    height: 50px;
+    justify-content: center;
+    align-items: center 
 }
 
 .Line-grid {
     grid-area: Line-grid;
-    background-color: #e5e5e5;
+    background-color: #e80606;
     height: 5px; 
 }
 
 .Search-grid {
     grid-area: Search-grid;
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 10px 2fr 200px 1fr;
     grid-gap: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .Searchtab-grid {
-    background-color: #fff;
-    height: 50px; 
+    background-color: #e3d237;
+    height: 50px;
+    grid-column: 1 / 2; 
 }
 
 .Map-grid {
-    background-color: #ddd;
-    height: 300px; 
+    background-color: #91eaa0;
+    height: 50px;
+    grid-column: 3 / 4; 
 }
 
 .Reklame-grid {
-    grid-area: Reklame-grid;
-    background-color: #f1f1f1;
-    height: 150px;
+    background-color: #6f0f0f;
+    height: 300px;
+    grid-column: 5 / 6;
+    margin-bottom: 20px;
 }
 
 .Icon-grid {
@@ -66,8 +80,10 @@
 }
 
 .icon {
-    background-color: #ccc;
+    background-color: #b2e31f;
     height: 50px;
+    text-align: center;
+    image-rendering: optimizeSpeed;
 }
 
 .line2-grid {
@@ -75,10 +91,11 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    text-align: center;
 }
 
 .linetext-grid {
-    background-color: #f9f9f9;
+    background-color: #320606;
     padding: 10px;
     width: 48%; 
 }
@@ -88,13 +105,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 10px;
+    text-align: center;
 }
 
 .anbefalinger-grid {
-    background-color: #eee;
+    background-color: #f4e21f;
     height: 200px; 
 }
-span {
-    font-size: 18px;
-    left: 10%;
+#diablo {
+    font-size: 40px;
+    font-family: fantasy;
+    text-align: center;
+    color: rgb(50, 24, 24);
+}
+span{
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+    color: red;
+}
+#searchbar{
+    font-size: 22px;
+    color: #3622cf;
+    font-family: fantasy;
 }
