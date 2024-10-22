@@ -1,40 +1,58 @@
-ul {
+.navbar{
     display: flex;
-    gap: 1rem;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-ul li{
-    color: aliceblue;
-    display: grid;
-    place-content: center;
-    margin: 0;
+.item1{
+    margin-right: 20px;
 }
-.navbar::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(146, 188, 224);
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: all 0.5s ease;
-    bottom: 0;
-    left: 0;
-
+.item2{
+    margin-right: 50px;
 }
-.Flexbox1 .Flexbox3{
+.items345{
+    display: flex;
+    gap: 40px; 
+    margin-right: 20px;
+}
+.item6{
+    margin-left: 350px;
+}
+.item7{
+    margin-left: auto;
+}
+.items345 a, .item2 a, .item6 a, .item7 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);          
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;     
+}
+#Flexbox1 #Flexbox3{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    height: 600px;
 }
-.Flexbox1item1 .Flexbox3item1{
+.Flexbox1item1 .Flexbox3item2{
     flex-grow: 1;
-    flex-basis: 200;
+    flex-basis: 200px;
+    width: 542px;
+    height: 304px;
+    border-style: groove;
+    background-color: rgb(209, 163, 93);
 }
-.Flexbox1item2 .Flexbox3item2{
+.Flexbox1item2 .Flexbox3item1{
     flex-grow: 1;
-    flex-basis: 200;
+    flex-basis: 200px;
+    width: 542px;
+    height: 304px;
+    border-style: groove;
+    background-color: rgb(209, 148, 58);
 }
-.Flexbox2{
+#Flexbox2{
     display: flex;
     flex-wrap: wrap;
 }
@@ -42,15 +60,15 @@ ul li{
     flex-grow: 1;
     flex-basis: 200;
 }
-.Flexbox4{
+#Flexbox4{
     display: Flex;
     flex-wrap: wrap;
 }
-.Flexbox4containern1{
+#Flexbox4containern1{
     flex-grow:1;
     flex-basis: 200;
 }
-.Flexbox4containern2{
+#Flexbox4containern2{
     flex-grow: 1;
     flex-basis: 200;
 }
@@ -58,15 +76,15 @@ ul li{
     flex-grow: 1;
     flex-basis: 200;
 }
-.Flexbox5{
+#Flexbox5{
     display: flex;
     flex-wrap: wrap;
 }
-.Flexbox5container1{
+#Flexbox5container1{
     flex-grow: 1;
     flex-basis: 200;
 }
-.Flexbox5container{
+#Flexbox5container{
     flex-grow: 1;
     flex-basis: 200;
 }
@@ -74,11 +92,11 @@ ul li{
     flex-grow: 1;
     flex-basis:200;
 }
-.Allrecipes{
+#Allrecipes{
     display: flex;
     flex-wrap: wrap;
 }
-.Flexbox6{
+#Flexbox6{
     display: flex;
     flex-wrap: wrap;
 }
@@ -86,7 +104,7 @@ ul li{
     flex-grow: 1;
     flex-basis:200
 }
-.Endbar{
+#Endbar{
     display: flex;
     flex-wrap: wrap;
 }
