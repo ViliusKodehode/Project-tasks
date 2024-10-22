@@ -22,3 +22,75 @@ ul li{
     left: 0;
 
 }
+.Flexbox1 .Flexbox3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Flexbox1item1 .Flexbox3item1{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox1item2 .Flexbox3item2{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Flexbox2item{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox4{
+    display: Flex;
+    flex-wrap: wrap;
+}
+.Flexbox4containern1{
+    flex-grow:1;
+    flex-basis: 200;
+}
+.Flexbox4containern2{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox4container2item1{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Flexbox5container1{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox5container{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Flexbox5container2item1{
+    flex-grow: 1;
+    flex-basis:200;
+}
+.Allrecipes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Flexbox6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Flexbox6item{
+    flex-grow: 1;
+    flex-basis:200
+}
+.Endbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Endbaritem{
+    flex-grow: 1;
+    flex-basis: 200;
+}
