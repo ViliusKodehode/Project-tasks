@@ -28,15 +28,20 @@
     font-size: 16px;
     white-space: nowrap;     
 }
-#Flexbox1 #Flexbox3{
+
+
+#Flexbox1, #Flexbox3{
     display: flex;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     width: 1000px;
     height: 600px;
 }
-.Flexbox1item1 .Flexbox3item2{
+.Flexbox1item1, .Flexbox3item2{
     flex-grow: 1;
     flex-basis: 200px;
     width: 542px;
@@ -44,7 +49,7 @@
     border-style: groove;
     background-color: rgb(209, 163, 93);
 }
-.Flexbox1item2 .Flexbox3item1{
+.Flexbox1item2, .Flexbox3item1{
     flex-grow: 1;
     flex-basis: 200px;
     width: 542px;
