@@ -494,9 +494,6 @@ function labyrinth(path){
             if (labyrinth[row,col] === 'End') End = [row, col];
         }
     }
-    function pathfinder(right, left, down){
-    }
-
 }
 
 labyrinth();
