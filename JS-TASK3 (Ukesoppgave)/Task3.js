@@ -490,10 +490,26 @@ function labyrinth(path){
 
     for(let row = 0; row < labyrinth.length;row++){
         for (let col = 0; col < labyrinth[row].length; col++){
-            if (labyrinth[row,col] === 'Start') Start = [row, col];
-            if (labyrinth[row,col] === 'End') End = [row, col];
+            if (labyrinth[row][col] === 'Start') Start = [row, col];
+            if (labyrinth[row][col] === 'End') End = [row, col];
         }
     }
+
+    function pathfinder(row,col,path,visitedspot){
+        if (row < 0 || row >= labyrinth.length || col >= labyrinth[0].length) return false;
+        if (labyrinth[row][col] === 'Obstacle' || visitedspot.length[row][col]) return false;
+        if (labyrinth[row][col] === 'End') {
+            path.push([rol][col]);
+            return true;
+        }
+        visitedspot[row][col]= true;
+        path.push([row][col]);
+        }
+
+        if (pathfinder(row -1, col, path, visitedspot) || pathfinder(row +1, col, path, isitedspot) ||
+            pathfinder(row, col -1, path, visitedspot) || pathfinder(row, col +1, path, visitedspot)){
+            return true;
+        }
 }
 
 labyrinth();
@@ -535,4 +551,3 @@ console.log('\x1b[36m%s\x1b[0m',"-----------------------------------------------
 // Lag en funksjon som implementerer en enkel kompresjonsalgoritme for strenger. F.eks. skal inputen "aaabbcccc" bli komprimert til "a3b2c4".
 // Sørg for at funksjonen også kan håndtere dekomprimering.
 console.log ('\x1b[36m%s\x1b[0m', 'Task 22 or 4.1');
-
