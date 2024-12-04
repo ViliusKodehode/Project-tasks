@@ -126,7 +126,7 @@ const priceless200 = products.filter(product => {
 console.log(priceless200);
 
 // 2 task
-const listofnames = products.map(product =>product.name);
+const listofnames = products.map(product => product.name);
 console.log(listofnames);
 
 // 3 task
