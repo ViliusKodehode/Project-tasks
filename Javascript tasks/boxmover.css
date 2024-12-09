@@ -1,0 +1,35 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    background-color: rgb(83, 241, 51);
+    border: 10px solid yellow;
+    border-radius: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:  rgb(174, 109, 26);
+}
+.evilbox {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(236, 18, 18);
+}
