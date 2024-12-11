@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.maincontainer {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.127);
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(rgb(0, 0, 0, 0.5));
+    padding: 20px;
+}
+.testingapi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgb(rgb(0, 0, 0, 0.5));
+}
+.button{
+    background-color: rgba(245, 245, 220, 0.433);
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 60px;
+}
